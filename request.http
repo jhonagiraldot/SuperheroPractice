@@ -1,0 +1,42 @@
+###
+POST http://localhost:3000/api/v1/heros/hero HTTP/1.1
+Content-Type: application/json
+
+{
+    "hero_name": "Flash",
+    "real_name": "Alberto Albertines",
+    "age": 20,
+    "superpowers": ["Super velocidad", "Pelear"]
+}
+
+
+###
+GET http://localhost:3000/api/v1/heros/heros HTTP/1.1
+
+
+###
+OPTIONS http://localhost:3000/api/v1/heros/heros HTTP/1.1
+
+
+###
+OPTIONS  http://localhost:3000/api/v1/heros/heros/637d8c6eae0b8672e1a84a6a HTTP/1.1
+
+
+###
+GET http://localhost:3000/api/v1/heros/heros/637d8c6eae0b8672e1a84a6a HTTP/1.1
+
+
+###
+DELETE http://localhost:3000/api/v1/heros/heros/637d8c6eae0b8672e1a84a6a HTTP/1.1
+
+###
+PUT http://localhost:3000/api/v1/heros/heros/637d8c6eae0b8672e1a84a6a HTTP/1.1
+Content-Type: application/json
+
+{
+    "hero_name": "SuperManCito",
+    "real_name": "Clark Kent",
+    "age": 30,
+    "superpowers": ["Volar", "Rayo Laser", "Super velocidad", "Visión de rayos X"]
+}
+
